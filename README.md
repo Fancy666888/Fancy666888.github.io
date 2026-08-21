@@ -1,5 +1,23 @@
 # al-folio
 
+# 个人学术主页
+
+这是一个基于 [al-folio](https://github.com/alshedivat/al-folio) 的中文个人学术网站，用于记录自动化专业的学习过程、项目实践、论文与个人经历。
+
+## 内容维护入口
+
+- 个人简介：`_pages/about.md`
+- 项目：`_projects/`
+- 论文：`_bibliography/papers.bib`（需要增加 `website = {true}`）
+- 学习记录：`_posts/`
+- 经历：`_data/cv.yml`
+- 社交与联系方式：`_data/socials.yml`
+- 网站全局配置：`_config.yml`
+
+当前已录入樊佳烁的个人信息、三项主要项目和一篇 MCM/ICM 参赛论文。部署地址确定后，还需补充 `_config.yml` 中的 `url` 与 `baseurl`。
+
+---
+
 <div align="center">
 
 [![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)

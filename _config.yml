@@ -2,25 +2,23 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: 樊佳烁
+first_name: 樊佳烁
+middle_name:
+last_name:
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  欢迎通过邮件与我交流自动化、控制、机器人与智能系统相关话题。
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  樊佳烁的个人学术主页，记录自动化、机器人、机器视觉与数学建模方向的学习过程、项目和论文成果。
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+  基于 <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> 构建。
+keywords: 樊佳烁, 北京林业大学, 自动化, 机器人, 具身智能, 计算机视觉, RGB-D, 数学建模
+lang: zh-CN
+icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
+url: https://fancy666888.github.io
+baseurl: # 用户主页仓库部署在域名根路径
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -136,8 +134,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: 学习记录
+blog_description: 课程笔记、论文阅读、实验记录与技术总结
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -163,27 +161,17 @@ giscus:
   dark_theme: dark # name of the dark color scheme (preferred works well with al-folio dark mode)
   light_theme: light # name of the light color scheme (preferred works well with al-folio light mode)
   emit_metadata: 0
-  lang: en
+  lang: zh-CN
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -302,12 +290,27 @@ plugins:
   - al_marimo
   - al_rtl
 
-# Sitemap settings
+# Sitemap and publishing defaults
 defaults:
   - scope:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      published: false
+  - scope:
+      path: ""
+      type: news
+    values:
+      published: false
+  - scope:
+      path: ""
+      type: projects
+    values:
+      published: false
 
 sass:
   style: compressed
@@ -348,19 +351,19 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: ["自动化", "控制", "机器人", "计算机视觉", "论文阅读", "实验记录"]
+display_categories: ["学习笔记", "项目日志", "研究随笔"]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [樊, Fan]
+  first_name: [佳烁, Jiashuo, J.]
 
   style: apa
-  locale: en
+  locale: zh
 
   source: /_bibliography/
   bibliography: papers.bib
@@ -376,17 +379,18 @@ scholar:
   details_dir: bibliography
   details_link: Details
 
-  query: "@*"
+  # 只有带 website={true} 的条目会展示，避免模板示例论文出现在个人主页。
+  query: "@*[website=true]"
   group_by: year
   group_order: descending
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  altmetric: false
+  dimensions: false
+  google_scholar: false
+  inspirehep: false
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -444,7 +448,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # 添加正式照片后可重新开启；Windows 本地构建无需依赖 ImageMagick
   widths:
     - 480
     - 800

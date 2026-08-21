@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: 项目
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 记录课程设计、竞赛实践、科研探索与工程作品。
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [研究项目, 工程实践, 课程设计]
 horizontal: false
 ---
 

@@ -1,19 +1,19 @@
 ---
 layout: about
-title: about
+title: 首页
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 北京林业大学工学院 自动化专业 2024级大三
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: profile-fan-jiashuo.jpg
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>北京林业大学工学院</p>
+    <p>自动化专业 · 2024级</p>
+    <p>中国，北京</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: true
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -27,8 +27,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+你好！我是**樊佳烁**，北京林业大学工学院自动化专业2024级本科生。这个网站用于持续整理我的学习轨迹、工程实践与研究成果。
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+我目前关注机器人、具身智能、机器视觉与智能控制，希望理解感知、决策和执行如何在真实系统中协同工作。正在开展的实践包括精密装配机械臂协同控制、蓝莓成熟度检测与 RGB-D 数据采集。
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## 研究兴趣
+
+- **机器人与具身智能：** 任务理解、状态机控制、视觉通信与机械臂协同
+- **机器视觉与三维感知：** 目标检测、成熟度识别、RGB-D 数据采集与质量评估
+- **建模与决策：** 贝叶斯推断、MCMC、统计分析与动态评分机制
+- **待探索...**
+
+## 网站内容
+
+- [项目]({{ '/projects/' | relative_url }})：课程设计、竞赛作品与持续研究项目
+- [论文]({{ '/publications/' | relative_url }})：发表成果、预印本与技术报告
+- [学习记录]({{ '/blog/' | relative_url }})：课程笔记、论文阅读和实验总结
+- [经历]({{ '/cv/' | relative_url }})：教育背景、技能、荣誉与个人简历
