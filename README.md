@@ -70,6 +70,8 @@ Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarasc
 <!--ts-->
 
 - [al-folio](#al-folio)
+- [个人学术主页](#个人学术主页)
+  - [内容维护入口](#内容维护入口)
   - [Getting started](#getting-started)
   - [Table Of Contents](#table-of-contents)
   - [Installing and Deploying](#installing-and-deploying)
