@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://fancy666888.github.io/sitemap.xml
