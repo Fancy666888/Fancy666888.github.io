@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>樊佳烁 - 科研实习简历</title>
+<style>
+  @page { size: A4; margin: 10mm; }
+  :root {
+    --bg: #ffffff;
+    --text: #111827;
+    --border: #d1d5db;
+    --font-base: 14px;
+    --line-height: 1.35;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    font-size: var(--font-base);
+    line-height: var(--line-height);
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  /* 头部 */
+  .header { display: flex; align-items: center; gap: 14px; padding: 2px 0 8px; }
+  .header-photo { flex-shrink: 0; }
+  .header-photo img { width: 78px; height: 109px; object-fit: cover; display: block; }
+  .header-content { flex: 1; min-width: 0; }
+  h1 { font-size: 22px; font-weight: 700; padding-bottom: 6px; border-bottom: 1px solid var(--border); margin-bottom: 6px; letter-spacing: 1px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 3px 16px; font-size: 13px; }
+  .contact span { white-space: nowrap; }
+  .contact a { color: inherit; text-decoration: underline; }
+  .tagline { margin-top: 4px; font-size: 13px; color: #374151; }
+
+  /* 章节 */
+  .section { margin-top: 7px; }
+  h2 { font-size: 14px; font-weight: 700; padding-bottom: 3px; border-bottom: 1px solid var(--border); margin-bottom: 4px; letter-spacing: 1px; }
+
+  /* 条目 */
+  .item { margin-bottom: 6px; }
+  .item-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 2px; }
+  .item-title { font-weight: 700; }
+  .item-sub { font-weight: 400; font-size: 13px; }
+  .item-date { font-size: 12.5px; color: #4b5563; white-space: nowrap; }
+  .item p { font-size: 13px; color: #374151; margin-bottom: 2px; }
+  ul { list-style: disc; padding-left: 16px; }
+  li { font-size: 13px; margin-bottom: 2px; }
+  strong { font-weight: 600; }
+
+  /* 技能 / 语言 */
+  .tags { font-size: 13px; }
+  .tags b { font-weight: 600; }
+</style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-photo"><img src="photo.jpg" alt="樊佳烁"></div>
+    <div class="header-content">
+      <h1>樊佳烁</h1>
+      <div class="contact">
+        <span>北京林业大学 · 自动化 · 2024级本科</span>
+        <span>北京</span>
+        <span>fanjiashuo666888@bjfu.edu.cn</span>
+        <span><a href="https://github.com/Fancy666888" target="_blank">github.com/Fancy666888</a></span>
+        <span>可实习时间：每周 3–4 天（线下）</span>
+      </div>
+      <div class="tagline">关注机器人、具身智能、机器视觉与智能控制，希望深入探索「感知—决策—执行」在真实系统中的协同；目前围绕机械臂协同控制、RGB-D 感知与建模决策开展实践。</div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>教育经历</h2>
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">北京林业大学 · 工学院 <span class="item-sub">自动化（本科）</span></span>
+        <span class="item-date">2024.09 – 2028.06（预期）</span>
+      </div>
+      <ul>
+        <li>学分积 <strong>91.69</strong>（专业排名 <strong>8/84</strong>）· 英语 <strong>CET-6 622</strong>；围绕自动化、机器人、机器视觉与数学建模开展课程学习与项目实践。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>科研与项目经历</h2>
+
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">面向精密有序装配的<strong>具身智能机械臂协同控制系统</strong></span>
+        <span class="item-date">2026</span>
+      </div>
+      <ul>
+        <li><strong>语义理解</strong>：多模态大模型解析任务卡并输出结构化步骤，确定性规则做白名单/顺序/范围校验，坚持「模型理解、规则安全执行」。</li>
+        <li><strong>视觉通信</strong>：通过 TCP 触发 VisionMaster 流程，等待真实坐标报文后再进入运动阶段，保证视觉—运动时序一致。</li>
+        <li><strong>运动控制</strong>：完成视觉坐标到机械臂坐标的映射，经 AUBO ARCS SDK/RPC 执行 MoveJ/MoveL 等动作。</li>
+        <li><strong>流程管理</strong>：以状态机组织抓取、放置、复位与异常处理，保留状态、时间戳与执行日志。</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">蓝莓成熟度检测与 <strong>RGB-D 数据采集管理系统</strong></span>
+        <span class="item-date">2026</span>
+      </div>
+      <ul>
+        <li>基于 <strong>YOLOv8</strong> 识别未熟/半熟/成熟蓝莓，支持置信度调整、统计看板与 CSV 导出；以 <strong>FastAPI</strong> + SQLAlchemy + SQLite + OpenCV 实现端到端应用。</li>
+        <li>接入 <strong>Intel RealSense D435i/D405</strong>，支持单帧/连续采集、Session 元数据、数据集索引与完整性审计。</li>
+        <li>计算有效深度比例、中心深度、中位深度等<strong>质量指标</strong>并生成采集报告，为三维定位与算法训练积累规范化数据。</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">基于 OpenCV 与 <strong>STM32F407</strong> 的智能救援小车</span>
+        <span class="item-date">2026.04</span>
+      </div>
+      <ul>
+        <li><strong>视觉感知</strong>：OpenCV 颜色空间转换、阈值分割、轮廓筛选与目标定位，识别普通/核心/危险目标并计算相对画面中心的水平偏差。</li>
+        <li><strong>运动控制</strong>：STM32F407 按麦克纳姆轮逆运动学解算三轴速度指令，经 TB6612 输出 PWM，以四路编码器 + <strong>PID</strong> 实现约 10ms 周期的轮速闭环。</li>
+        <li><strong>任务决策</strong>：以「搜索—跟踪—接近—夹取/转运—返回」状态机组织动作与目标处理顺序。</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">投票系统的<strong>贝叶斯推断</strong>与动态评分研究</span>
+        <span class="item-date">2026</span>
+      </div>
+      <ul>
+        <li>在分层约束下建立贝叶斯模型，以 Dirichlet 分布描述投票份额先验，用 <strong>Metropolis–Hastings MCMC</strong> 对隐藏粉丝投票做抽样推断。</li>
+        <li>比较排名制、百分比制与评委干预机制，用 <strong>Lasso</strong> 分析影响因素。</li>
+        <li>提出不确定性感知的 <strong>专家—公众融合（Expert–Public Fusion）</strong>动态评分框架，在 34 个赛季、2777 条观测上开展分析，重构任务准确率达 <strong>0.9655</strong>。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>论文发表</h2>
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">Constrained Bayesian Reconstruction of Latent Public Preferences under Dynamic Elimination Rules: An Uncertainty-Aware Expert–Public Fusion Framework</span>
+      </div>
+      <ul>
+        <li>期刊 <strong>Axioms</strong>，2026，<strong>Accepted</strong>（2026 MCM/ICM Problem C 参赛论文，团队作者；卷期、页码与 DOI 待正式上线后补充）。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>荣誉与竞赛</h2>
+    <ul>
+      <li><strong>国家奖学金</strong>（2024–2025 学年）</li>
+      <li><strong>京津冀赛区一等奖并晋级</strong> · 中国大学生机械工程创新创意大赛·具身智能精密装配赛（2026）</li>
+      <li><strong>北京市二等奖</strong> · 全国大学生数学建模竞赛</li>
+      <li><strong>北京市三等奖</strong> · 全国大学生电子设计竞赛</li>
+      <li><strong>校级二等奖</strong> · 校级工程实践与创新能力竞赛·智能救援赛项（2026.04）</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>技能</h2>
+    <div class="tags">
+      <p><b>编程与工程：</b>Python、FastAPI、OpenCV、Git、LaTeX</p>
+      <p><b>视觉与深度学习：</b>YOLOv8、VisionMaster</p>
+      <p><b>机器人与感知平台：</b>AUBO ARCS、Intel RealSense D435i/D405、STM32 HAL、PID 运动控制</p>
+      <p><b>建模与决策：</b>贝叶斯推断、MCMC、统计建模</p>
+      <p><b>语言：</b>中文（母语）、英语（学术阅读与写作）</p>
+    </div>
+  </section>
+
+</body>
+</html>

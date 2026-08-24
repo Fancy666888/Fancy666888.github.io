@@ -49,10 +49,11 @@ cv:
           - 使用 YOLOv8、FastAPI、OpenCV 构建未熟、半熟和成熟蓝莓检测应用
           - 支持 RealSense D435i/D405、连续采集、深度质量指标、会话报告与数据完整性审计
       - name: 投票系统的贝叶斯推断与动态评分研究
-        summary: 2026 MCM/ICM Problem C 参赛论文，研究隐藏观众投票估计和评委—观众评分机制。
+        summary: 2026 MCM/ICM Problem C 参赛论文，研究隐藏观众投票估计和评委—观众评分机制，现已被 Axioms 接收。
         highlights:
           - 采用分层约束下的贝叶斯 MCMC 推断与 Lasso 影响因素分析
           - 提出 Logistic Dynamic Weighted System，并完成多种基线机制的重构实验比较
+          - 论文已被期刊 Axioms 接收，正式出版信息待上线后补充
       - name: 基于 OpenCV 与 STM32F407 的智能救援小车
         summary: 面向智能救援赛项，完成颜色目标识别、全向底盘控制和夹取转运系统的软硬件联调。
         highlights:

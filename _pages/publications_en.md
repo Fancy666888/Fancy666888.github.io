@@ -2,12 +2,14 @@
 layout: page
 title: Publications
 permalink: /en/publications/
-description: Future publications, preprints, and technical reports.
+description: Accepted papers, publications, preprints, and technical reports.
 lang: en
 nav: false
 zh_url: /publications/
 ---
 
-I do not have any peer-reviewed publications yet. Future papers and preprints will be listed here in reverse chronological order, together with links to the paper, code, data, and related project pages.
+## Accepted Paper
 
-The 2026 MCM/ICM competition paper is currently documented as a [modeling project]({{ '/en/projects/' | relative_url }}) rather than as a formal publication.
+_Who Really Keeps Dancing? A Bayesian MCMC Inference and Logistic Dynamic Scoring Framework in Voting Systems_ has been **accepted by Axioms**. Volume, issue, page, and DOI information will be added after online publication.
+
+The currently available PDF is the 2026 MCM/ICM Problem C competition version. [Read the competition paper]({{ '/assets/pdf/2026-mcm-problem-c.pdf' | relative_url }}) or [view the related modeling project]({{ '/en/projects/' | relative_url }}).

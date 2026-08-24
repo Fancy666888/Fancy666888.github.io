@@ -36,10 +36,12 @@ Our team, “具身不由己,” won **First Prize in the Beijing–Tianjin–He
 
 This modeling project originated from the 2026 MCM/ICM Problem C competition paper, _Who Really Keeps Dancing? A Bayesian MCMC Inference and Logistic Dynamic Scoring Framework in Voting Systems_. It estimates hidden audience votes and compares alternative judging and elimination mechanisms.
 
+The paper has been **accepted by Axioms**. Volume, issue, page, and DOI information will be added after online publication.
+
 - Uses Bayesian MCMC under hierarchical constraints to infer latent vote shares
 - Compares ranking, percentage, and judges' intervention mechanisms
 - Proposes a Logistic Dynamic Weighted System whose audience and judges' weights evolve during a season
-- Archives the competition paper and ongoing reproducibility experiments
+- Archives the competition paper and reproducibility experiments
 
 [Read the competition paper (PDF)]({{ '/assets/pdf/2026-mcm-problem-c.pdf' | relative_url }})
 

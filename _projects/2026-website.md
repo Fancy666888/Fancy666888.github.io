@@ -4,7 +4,7 @@ title: 个人学术主页
 description: 基于 al-folio 构建，用于长期沉淀学习、项目与论文成果。
 importance: 9
 category: 工程实践
-published: true
+published: false
 ---
 
 ## 项目背景

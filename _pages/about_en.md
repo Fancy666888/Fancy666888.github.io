@@ -42,4 +42,4 @@ I am interested in robotics, embodied intelligence, machine vision, and intellig
 - [Projects]({{ '/en/projects/' | relative_url }}): research projects, engineering competitions, and course work
 - [Learning]({{ '/en/learning/' | relative_url }}): study notes, paper reading, and experiment summaries
 - [Experience]({{ '/en/experience/' | relative_url }}): education, technical skills, projects, and honors
-- [Publications]({{ '/en/publications/' | relative_url }}): a page reserved for future publications and preprints
+- [Publications]({{ '/en/publications/' | relative_url }}): accepted papers, publications, preprints, and technical reports
