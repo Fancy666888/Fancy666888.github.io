@@ -3,7 +3,8 @@ layout: default
 permalink: /blog/
 title: 学习记录
 nav: true
-nav_order: 4
+nav_order: 3
+en_url: /en/learning/
 pagination:
   enabled: true
   collection: posts

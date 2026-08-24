@@ -4,7 +4,8 @@ permalink: /publications/
 title: 论文
 description: 发表论文、预印本与技术报告；内容由 BibTeX 统一维护。
 nav: true
-nav_order: 2
+nav_order: 5
+en_url: /en/publications/
 ---
 
 <!-- _pages/publications.md -->

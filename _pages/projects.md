@@ -4,7 +4,8 @@ title: 项目
 permalink: /projects/
 description: 记录课程设计、竞赛实践、科研探索与工程作品。
 nav: true
-nav_order: 3
+nav_order: 2
+en_url: /en/projects/
 display_categories: [研究项目, 工程实践, 课程设计]
 horizontal: false
 ---

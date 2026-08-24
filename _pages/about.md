@@ -3,6 +3,7 @@ layout: about
 title: 首页
 permalink: /
 subtitle: 北京林业大学工学院 自动化专业 2024级大三
+en_url: /en/
 
 profile:
   align: right
@@ -13,7 +14,7 @@ profile:
     <p>自动化专业 · 2024级</p>
     <p>中国，北京</p>
 
-selected_papers: true
+selected_papers: false
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -41,6 +42,6 @@ latest_posts:
 ## 网站内容
 
 - [项目]({{ '/projects/' | relative_url }})：课程设计、竞赛作品与持续研究项目
-- [论文]({{ '/publications/' | relative_url }})：发表成果、预印本与技术报告
 - [学习记录]({{ '/blog/' | relative_url }})：课程笔记、论文阅读和实验总结
 - [经历]({{ '/cv/' | relative_url }})：教育背景、技能、荣誉与个人简历
+- [论文]({{ '/publications/' | relative_url }})：未来发表成果、预印本与技术报告的归档页面
