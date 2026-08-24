@@ -77,7 +77,10 @@
 } /* Name.Tag */ /* Name.Variable */ /* Operator.Word */
 .highlight .w {
   color: #bbbbbb;
-} /* Text.Whitespace */ /* Literal.Number.Float */ /* Literal.Number.Hex */
+} /* Text.Whitespace */
+.highlight .mf {
+  color: #009999;
+} /* Literal.Number.Float */ /* Literal.Number.Hex */
 .highlight .mi {
   color: #009999;
 } /* Literal.Number.Integer */
