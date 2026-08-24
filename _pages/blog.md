@@ -30,8 +30,6 @@ pagination:
   </div>
   {% endif %}
 
-<p class="text-muted">记录按学习或项目实际发生时间倒序排列；日期优先依据原始笔记中的明确时间和文件最后修改时间，而不是网站整理时间。</p>
-
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 
   <div class="tag-category-list">

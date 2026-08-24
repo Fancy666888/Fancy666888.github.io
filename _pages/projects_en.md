@@ -34,9 +34,9 @@ Our team, “具身不由己,” won **First Prize in the Beijing–Tianjin–He
 
 ## Bayesian Inference and Dynamic Scoring in Voting Systems
 
-This modeling project originated from the 2026 MCM/ICM Problem C competition paper, _Who Really Keeps Dancing? A Bayesian MCMC Inference and Logistic Dynamic Scoring Framework in Voting Systems_. It estimates hidden audience votes and compares alternative judging and elimination mechanisms.
+This modeling project originated from the 2026 MCM/ICM Problem C and was subsequently developed into the journal paper _Constrained Bayesian Reconstruction of Latent Public Preferences under Dynamic Elimination Rules: An Uncertainty-Aware Expert–Public Fusion Framework_. It estimates hidden audience votes and compares alternative judging and elimination mechanisms.
 
-The paper has been **accepted by Axioms**. Volume, issue, page, and DOI information will be added after online publication.
+The paper has been **accepted by Axioms**, with me as the third author. Volume, issue, page, and DOI information will be added after online publication.
 
 - Uses Bayesian MCMC under hierarchical constraints to infer latent vote shares
 - Compares ranking, percentage, and judges' intervention mechanisms

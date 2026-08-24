@@ -11,7 +11,7 @@ related_publications: true
 
 ## 论文概述
 
-本项目源于 2026 MCM/ICM Problem C 参赛论文 _Who Really Keeps Dancing? A Bayesian MCMC Inference and Logistic Dynamic Scoring Framework in Voting Systems_。研究针对只有淘汰结果、缺少真实观众票数的投票节目数据，估计隐藏的粉丝投票，并比较不同评分与淘汰机制。论文现已被期刊 **Axioms** 接收。
+本项目源于 2026 MCM/ICM Problem C，后续研究形成期刊论文 _Constrained Bayesian Reconstruction of Latent Public Preferences under Dynamic Elimination Rules: An Uncertainty-Aware Expert–Public Fusion Framework_。研究针对只有淘汰结果、缺少真实观众票数的投票节目数据，估计隐藏的粉丝投票，并比较不同评分与淘汰机制。论文现已被期刊 **Axioms** 接收，本人为第三作者。
 
 [阅读参赛论文 PDF]({{ '/assets/pdf/2026-mcm-problem-c.pdf' | relative_url }})
 
