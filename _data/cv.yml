@@ -13,89 +13,57 @@ cv:
 
   sections:
     教育经历:
-      - institution: 北京林业大学工学院
-        location: 北京
-        area: 自动化
-        studyType: 本科
-        start_date: 2024-09
-        end_date: 2028-06（预期）
-        highlights:
-          - 学分积 91.69，专业排名 8/84
-          - 英语 CET-6 622
+      - bullet: |
+          **北京林业大学 · 工学院｜自动化（本科）**（2024.09–2028.06，预期）<br>
+          学分积 **91.69**，专业排名 **8/84**；英语 **CET-6 622**。
 
     研究兴趣:
-      - name: 机器人、智能感知与建模决策
-        icon: fa-solid fa-compass
-        keywords: "具身智能, 机械臂控制, 计算机视觉, RGB-D 感知, 智能控制, 贝叶斯推断, MCMC"
+      - bullet: |
+          **机器人与具身智能：**机械臂控制、状态机设计与真实系统中的感知—决策—执行协同。<br>
+          **机器视觉与三维感知：**计算机视觉、YOLO 模型训练、RGB-D 感知与数据质量评估。<br>
+          **建模与决策：**贝叶斯推断、MCMC、统计建模与数据驱动决策。
 
     科研与项目经历:
-      - name: 面向精密有序装配的具身智能机械臂协同控制系统
-        date: 2026
-        summary: 面向任务卡语义理解和六步精密装配，构建以 Python GUI 为中枢的视觉、规划与机械臂协同控制系统。
-        highlights:
-          - 多模态大模型解析任务卡并输出结构化步骤，以白名单、顺序和范围等确定性规则校验可执行结果
-          - 通过 TCP 触发 VisionMaster 流程，等待真实坐标报文后再进入运动阶段，保证视觉—运动时序一致
-          - 完成视觉坐标到机械臂坐标的映射，经 AUBO ARCS SDK/RPC 执行 MoveJ、MoveL 等动作
-          - 以状态机组织抓取、放置、复位与异常处理，保留状态、时间戳和执行日志
+      - bullet: |
+          **面向精密有序装配的具身智能机械臂协同控制系统**（2026）<br>
+          **语义理解：**使用多模态大模型解析任务卡并输出结构化步骤，以白名单、顺序和范围等确定性规则校验可执行结果。<br>
+          **视觉通信：**通过 TCP 触发 VisionMaster 流程，等待真实坐标报文后再进入运动阶段，保证视觉—运动时序一致。<br>
+          **运动控制：**完成视觉坐标到机械臂坐标的映射，经 AUBO ARCS SDK/RPC 执行 MoveJ、MoveL 等动作。<br>
+          **流程管理：**以状态机组织抓取、放置、复位与异常处理，保留状态、时间戳和执行日志。
 
-      - name: 蓝莓成熟度检测与 RGB-D 数据采集管理系统
-        date: 2026
-        summary: 面向蓝莓采摘机器人的视觉感知与数据基础设施，覆盖成熟度检测、深度采集、质量评估和数据集管理。
-        highlights:
-          - 训练 YOLO 模型识别未熟、半熟和成熟蓝莓，搭建检测应用，支持置信度调整、统计看板与 CSV 导出
-          - 接入 Intel RealSense D435i/D405，支持单帧与连续采集、Session 元数据、数据集索引和完整性审计
-          - 计算有效深度比例、中心深度和中位深度等质量指标并生成采集报告，为三维定位与算法训练积累规范化数据
+      - bullet: |
+          **蓝莓成熟度检测与 RGB-D 数据采集管理系统**（2026）<br>
+          训练 YOLO 模型识别未熟、半熟和成熟蓝莓，搭建支持置信度调整、统计看板与 CSV 导出的检测应用。<br>
+          接入 Intel RealSense D435i/D405，实现单帧与连续采集、Session 元数据、数据集索引和完整性审计。<br>
+          计算有效深度比例、中心深度和中位深度等质量指标并生成采集报告，为三维定位与算法训练积累规范化数据。
 
-      - name: 基于 OpenMV 与 STM32F407 的智能救援小车
-        date: 2026-04
-        summary: 面向智能救援赛项，完成颜色目标识别、全向底盘控制和夹取转运系统的软硬件联调。
-        highlights:
-          - 使用 OpenMV4 H7 Plus 完成颜色阈值分割、色块筛选和目标定位，识别不同类别目标并计算水平偏差
-          - STM32F407 按麦克纳姆轮逆运动学解算三轴速度指令，经 TB6612 输出 PWM，以四路编码器和 PID 实现约 10 ms 周期的轮速闭环
-          - 以“搜索—跟踪—接近—夹取/转运—返回”状态机组织动作与目标处理顺序
+      - bullet: |
+          **基于 OpenMV 与 STM32F407 的智能救援小车**（2026.04）<br>
+          **视觉感知：**使用 OpenMV4 H7 Plus 完成颜色阈值分割、色块筛选和目标定位，识别不同类别目标并计算水平偏差。<br>
+          **运动控制：**STM32F407 按麦克纳姆轮逆运动学解算三轴速度指令，经 TB6612 输出 PWM，以四路编码器和 PID 实现约 10 ms 周期的轮速闭环。<br>
+          **任务决策：**以“搜索—跟踪—接近—夹取/转运—返回”状态机组织动作与目标处理顺序。
 
-      - name: 投票系统的贝叶斯推断与动态评分研究
-        date: 2026
-        summary: 2026 MCM/ICM Problem C 研究项目，获 F 奖（Finalist）；相关论文已被 Axioms 接收，本人为第三作者。
-        highlights:
-          - 在分层约束下建立贝叶斯模型，以 Dirichlet 分布描述投票份额先验，使用 Metropolis–Hastings MCMC 推断隐藏粉丝投票
-          - 比较排名制、百分比制与评委干预机制，并使用 Lasso 分析影响因素
-          - 提出不确定性感知的专家—公众融合动态评分框架，在 34 个赛季、2777 条观测上开展分析，重构任务准确率达到 0.9655
+      - bullet: |
+          **投票系统的贝叶斯推断与动态评分研究**（2026）<br>
+          获 2026 MCM/ICM **F 奖（Finalist）**；相关论文已被 **Axioms** 接收，本人为**第三作者**。<br>
+          在分层约束下建立贝叶斯模型，以 Dirichlet 分布描述投票份额先验，使用 Metropolis–Hastings MCMC 推断隐藏粉丝投票。<br>
+          比较排名制、百分比制与评委干预机制，并使用 Lasso 分析影响因素。<br>
+          提出不确定性感知的专家—公众融合动态评分框架，在 34 个赛季、2777 条观测上开展分析，重构任务准确率达到 **0.9655**。
 
     论文发表:
-      - name: "Constrained Bayesian Reconstruction of Latent Public Preferences under Dynamic Elimination Rules: An Uncertainty-Aware Expert–Public Fusion Framework"
-        date: 2026
-        summary: Axioms，Accepted，第三作者；卷期、页码和 DOI 待正式上线后补充。
+      - bullet: |
+          **Constrained Bayesian Reconstruction of Latent Public Preferences under Dynamic Elimination Rules: An Uncertainty-Aware Expert–Public Fusion Framework**<br>
+          *Axioms*，Accepted，2026，第三作者；卷期、页码和 DOI 待正式上线后补充。
 
     荣誉与竞赛:
-      - title: 国家奖学金
-        date: 2024–2025 学年
-      - title: 美国大学生数学建模竞赛 F 奖（Finalist）
-        date: 2026
-        awarder: MCM/ICM
-      - title: 京津冀赛区一等奖并晋级
-        date: 2026
-        awarder: 中国大学生机械工程创新创意大赛·具身智能精密装配赛
-      - title: 北京市二等奖
-        date: 2025-09
-        awarder: 全国大学生数学建模竞赛
-      - title: 北京市三等奖
-        date: 2026-08
-        awarder: 全国大学生电子设计竞赛
-      - title: 校级二等奖
-        date: 2026-04
-        awarder: 校级工程实践与创新能力竞赛·智能救援赛项
+      - bullet: "**国家奖学金**（2024–2025 学年）"
+      - bullet: "**美国大学生数学建模竞赛 F 奖（Finalist）**（2026）"
+      - bullet: "**京津冀赛区一等奖并晋级** · 中国大学生机械工程创新创意大赛·具身智能精密装配赛（2026）"
+      - bullet: "**北京市二等奖** · 全国大学生数学建模竞赛（2025.09）"
+      - bullet: "**北京市三等奖** · 全国大学生电子设计竞赛（2026.08）"
+      - bullet: "**校级二等奖** · 校级工程实践与创新能力竞赛·智能救援赛项（2026.04）"
 
     技能:
-      - name: 编程
-        level: 项目实践
-        icon: fa-solid fa-code
-        keywords: "Python, C, Git, LaTeX"
-      - name: 机器人与控制
-        level: 项目实践
-        icon: fa-solid fa-robot
-        keywords: "AUBO ARCS, STM32 HAL, PID 运动控制"
-      - name: 视觉与感知
-        level: 项目实践
-        icon: fa-solid fa-eye
-        keywords: "YOLO 模型训练, VisionMaster, Intel RealSense D435i/D405, OpenMV4 H7 Plus"
+      - bullet: "**编程：**Python、C、Git、LaTeX"
+      - bullet: "**机器人与控制：**AUBO ARCS、STM32 HAL、PID 运动控制"
+      - bullet: "**视觉与感知：**YOLO 模型训练、VisionMaster、Intel RealSense D435i/D405、OpenMV4 H7 Plus"
