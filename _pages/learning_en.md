@@ -26,7 +26,7 @@ I compared simulated annealing, genetic algorithms, and ant colony optimization 
 
 ### April 2026 — Intelligent rescue vehicle {#intelligent-rescue-car-retrospective}
 
-For a university engineering competition, our team developed an autonomous rescue vehicle and received Second Prize. The system evolved from a K210-based vision prototype to a final OpenCV and STM32F407 architecture, integrating color perception, a task state machine, mecanum-wheel motion, encoder feedback, and PID control.
+For a university engineering competition, our team developed an autonomous rescue vehicle and received Second Prize. The system evolved from a K210-based vision prototype to a final OpenMV4 H7 Plus and STM32F407 architecture, integrating color perception, a task state machine, mecanum-wheel motion, encoder feedback, and PID control.
 
 [Read the full Chinese note]({{ '/blog/2026/intelligent-rescue-car-retrospective/' | relative_url }})
 

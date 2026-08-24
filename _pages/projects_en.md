@@ -53,7 +53,7 @@ An electronic-design competition project. Details about its mechanical structure
 
 ### Intelligent Rescue Vehicle
 
-An autonomous rescue robot integrating OpenCV-based color vision with an STM32F407-controlled mecanum-wheel chassis. The system identifies colored rescue targets, estimates their horizontal offsets, and coordinates search, tracking, grasping, and transportation through encoder-based PID motion control.
+An autonomous rescue robot integrating OpenMV4 H7 Plus color vision with an STM32F407-controlled mecanum-wheel chassis. The system identifies colored rescue targets, estimates their horizontal offsets, and coordinates search, tracking, grasping, and transportation through encoder-based PID motion control.
 
 The project received **Second Prize in the university-level competition in April 2026**.
 

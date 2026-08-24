@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OpenCV and STM32F407 Intelligent Rescue Vehicle
+title: OpenMV and STM32F407 Intelligent Rescue Vehicle
 permalink: /en/projects/intelligent-rescue-car/
 description: An autonomous rescue robot combining color vision, mecanum-wheel motion, and encoder-based PID control.
 lang: en
@@ -18,11 +18,11 @@ Our system integrated vision, task logic, omnidirectional motion, and a front gr
 
 ## Final Architecture
 
-Early prototypes explored K210 and OpenMV-based embedded vision. After iterative testing, the final architecture used **OpenCV for visual processing and an STM32F407 as the main controller**.
+An early K210 prototype was used to validate color thresholds, task states, and serial communication. After iterative testing, the final architecture used an **OpenMV4 H7 Plus vision module and an STM32F407 as the main controller**.
 
-- **Visual perception:** OpenCV-based color-space conversion, thresholding, contour filtering, and target localization
+- **Visual perception:** OpenMV-based color thresholding, blob filtering, and target localization
 - **Task logic:** search, tracking, approach, grasp/transport, and return-to-search modes organized around the competition rules
-- **Main controller:** STM32F407 for motion-mode transitions, velocity commands, serial communication, and actuator control
+- **Main controller:** STM32F407 receives OpenMV results over UART and handles motion-mode transitions, velocity commands, and actuator control
 - **Chassis:** a four-wheel mecanum platform driven through TB6612 channels, with quadrature-encoder feedback and PID wheel-speed control
 
 ## Motion Control
@@ -40,10 +40,10 @@ The animation below shows the robot approaching a colored target and using its f
 ## Engineering Work
 
 - Decomposed the task into perception, decision, chassis-motion, and grasping subsystems
-- Iterated through K210, OpenMV, and OpenCV vision approaches before selecting the final solution
+- Iterated from a K210 vision prototype to the final OpenMV4 H7 Plus solution
 - Integrated STM32F407, TB6612 motor drivers, mecanum wheels, quadrature encoders, and PID control
 - Debugged target-centering direction, wheel mapping, serial-frame parsing, and motion-control parameters
 
 ## Technology
 
-OpenCV · Python · STM32F407 · C · STM32 HAL · Mecanum Wheels · TB6612 · Encoders · PID · UART
+OpenMV4 H7 Plus · MicroPython · STM32F407 · C · STM32 HAL · Mecanum Wheels · TB6612 · Encoders · PID · UART

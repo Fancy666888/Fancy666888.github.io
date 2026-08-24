@@ -35,9 +35,9 @@ Developed maturity detection, depth acquisition, quality assessment, and dataset
 
 Worked on the 2026 MCM/ICM Problem C, using Bayesian MCMC and mechanism comparison to study hidden audience votes and judges–audience scoring systems.
 
-### OpenCV and STM32F407 Intelligent Rescue Vehicle
+### OpenMV and STM32F407 Intelligent Rescue Vehicle
 
-Integrated OpenCV-based target perception with an STM32F407-controlled mecanum-wheel chassis. The motion system used TB6612 motor drivers, quadrature encoders, and four-wheel PID control to support autonomous search, tracking, grasping, and transportation.
+Integrated OpenMV4 H7 Plus target perception with an STM32F407-controlled mecanum-wheel chassis. The motion system used TB6612 motor drivers, quadrature encoders, and four-wheel PID control to support autonomous search, tracking, grasping, and transportation.
 
 ## Skills
 
