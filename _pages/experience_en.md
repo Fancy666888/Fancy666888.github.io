@@ -35,6 +35,10 @@ Developed maturity detection, depth acquisition, quality assessment, and dataset
 
 Worked on the 2026 MCM/ICM Problem C, using Bayesian MCMC and mechanism comparison to study hidden audience votes and judges–audience scoring systems.
 
+### OpenCV and STM32F407 Intelligent Rescue Vehicle
+
+Integrated OpenCV-based target perception with an STM32F407-controlled mecanum-wheel chassis. The motion system used TB6612 motor drivers, quadrature encoders, and four-wheel PID control to support autonomous search, tracking, grasping, and transportation.
+
 ## Skills
 
 - **Programming and tools:** Python, FastAPI, YOLOv8, OpenCV, Git, LaTeX
@@ -45,3 +49,7 @@ Worked on the 2026 MCM/ICM Problem C, using Bayesian MCMC and mechanism comparis
 **First Prize, Beijing–Tianjin–Hebei Regional Competition and Advancement**
 
 Embodied Intelligence Precision Assembly Competition, China College Students Mechanical Engineering Innovation and Creativity Competition, 2026
+
+**Second Prize, University-Level Intelligent Rescue Competition**
+
+Engineering Practice and Innovation Competition, April 2026

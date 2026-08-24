@@ -53,12 +53,21 @@ cv:
         highlights:
           - 采用分层约束下的贝叶斯 MCMC 推断与 Lasso 影响因素分析
           - 提出 Logistic Dynamic Weighted System，并完成多种基线机制的重构实验比较
+      - name: 基于 OpenCV 与 STM32F407 的智能救援小车
+        summary: 面向智能救援赛项，完成颜色目标识别、全向底盘控制和夹取转运系统的软硬件联调。
+        highlights:
+          - 使用 OpenCV 处理视觉信息，并由 STM32F407 完成任务模式切换和底盘控制
+          - 基于麦克纳姆轮、TB6612、四路编码器和 PID 搭建闭环运动系统
 
     荣誉与竞赛:
       - title: 具身智能精密装配赛京津冀赛区一等奖并晋级
         date: 2026
         awarder: 中国大学生机械工程创新创意大赛
         summary: 团队“具身不由己”，参赛编号 2340，北京林业大学。
+      - title: 智能救援赛项校级二等奖
+        date: 2026-04
+        awarder: 校级工程实践与创新能力竞赛
+        summary: 基于 OpenCV 与 STM32F407 的智能救援小车项目。
 
     语言:
       - name: 中文

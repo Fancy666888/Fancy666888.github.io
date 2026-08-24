@@ -51,4 +51,8 @@ An electronic-design competition project. Details about its mechanical structure
 
 ### Intelligent Rescue Vehicle
 
-An engineering innovation competition project. Details about its sensing, control, mechanical design, and competition results will be added later.
+An autonomous rescue robot integrating OpenCV-based color vision with an STM32F407-controlled mecanum-wheel chassis. The system identifies colored rescue targets, estimates their horizontal offsets, and coordinates search, tracking, grasping, and transportation through encoder-based PID motion control.
+
+The project received **Second Prize in the university-level competition in April 2026**.
+
+[Read the project details]({{ '/en/projects/intelligent-rescue-car/' | relative_url }})
