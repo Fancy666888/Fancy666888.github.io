@@ -49,7 +49,11 @@ The paper has been **accepted by Axioms**, with me as the third author. Volume, 
 
 ### Three-Axis Gantry Puzzle Device
 
-An electronic-design competition project. Details about its mechanical structure, control strategy, and demonstration results will be added later.
+A vision-guided puzzle system developed for the 2026 Beijing College Student Electronic Design Competition. MaixCAM2 performs A4-board rectification, four-piece contour matching, pose estimation, and task planning, while an STM32F407 controls the three-axis gantry, electromagnetic gripper, and external rotation tray.
+
+The team received **Third Prize in the Beijing undergraduate division in August 2026**.
+
+[Read the project details]({{ '/en/projects/gantry-puzzle-device/' | relative_url }})
 
 ### Intelligent Rescue Vehicle
 
